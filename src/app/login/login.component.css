@@ -1,0 +1,27 @@
+
+.logclass{
+    border-radius: 10px;
+    border: 2px solid black;
+    /* margin-top: 20%; */
+    padding: 25px;
+    max-width: 535px;
+    
+    margin: auto;
+    /* position: relative;; */
+    background-color: black;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    color: cornsilk;
+    
+}
+
+.form-boot{
+    width: 500px;
+    margin: 0% auto;
+    padding-top: 7px;
+}
+
+.form-control,.form-text{
+    width: 450px;
+}

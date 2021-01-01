@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+.Regclass{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width:  800px;
+    background-color: black;
+    color: cornsilk;
+    padding: 10px;
+
+}
+
+.form-control{
+    width: 750px;
+}
+
+
+.error-msg{
+    color: red;
+}
+
+.formField{
+ margin-top: 5px;
+}

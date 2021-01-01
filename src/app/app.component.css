@@ -1,0 +1,9 @@
+.nav-item{
+    padding: 2px;
+    margin: 2px;
+}
+
+.d-flex{
+    right: 2%;
+    position: absolute;
+}

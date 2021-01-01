@@ -1,0 +1,44 @@
+<h1>Registration Form</h1>
+
+<div class="Regclass">
+    <form class="col-lg-6" [formGroup]="RegistrationForm" (ngSubmit)="onSave()">
+        <div class="mb-3 formField">
+            <label for="userid" class="form-label">Email address</label>
+            <input type="email" class="form-control" formControlName="userid" placeholder="Enter email id">
+            <span *ngIf="!userid.valid && (userid.touched || submitted)" class="error-msg"> Please enter valid email
+                id.</span>
+        </div>
+        <div class="mb-3 formField">
+            <label for="username" class="form-label">User name</label>
+            <input type="text" class="form-control" formControlName="username" placeholder="Enter username">
+            <span *ngIf="!username.valid && (username.touched || submitted)" class="error-msg ng-invalid"> Please enter
+                valid email id.</span>
+        </div>
+        <div class="mb-3 formField">
+            <label for="psword" class="form-label">Password</label>
+            <input type="password" class="form-control" formControlName="psword" placeholder="Enter password">
+            <span *ngIf="!psword.valid && (psword.touched || submitted) " class="error-msg"> Please enter valid
+                password</span>
+
+        </div>
+        <div class="mb-3 formField">
+            <label for="cnfPsword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" formControlName="cnfPsword" placeholder="Re-enter password">
+            <span *ngIf="(!cnfPsword.valid && (cnfPsword.touched || submitted))" class="error-msg"> Please enter valid
+                email id</span>
+            <span *ngIf="notmatch && submitted" class="error-msg"> Confirmed password is not matching with password
+            </span>
+
+        </div>
+
+        <div class="mb-3 formField">
+            <label> Please upload your profile image</label>
+            <input type="file" formControlName="filename" (change)="onFileChange($event)"></input>
+            <span *ngIf="submitted && (!filename.valid)" class="error-msg"> Please upload your image</span>
+        </div>
+
+        <div class="sbmit col-xs-4">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
